@@ -1210,3 +1210,54 @@ footer .back-to-top i {
         height: 25px;
     }
 }
+
+/* HEADER DESKTOP */
+@media (min-width: 768px) {
+  #menu-wrapper .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-header {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-first {
+    display: flex !important;
+    align-items: center;
+  }
+}
+
+/* HEADER MOBILE */
+@media (max-width: 767px) {
+
+  /* El menú colapsado aparece debajo, NO encima */
+  .navbar-collapse {
+    width: 100%;
+    background: #3e5686;
+    margin-top: 10px;
+    padding: 0;
+  }
+
+  #main-nav ul li a {
+    color: #7a7a7a !important;
+    line-height: 50px;
+    display: block;
+  }
+
+  /* Evita que el menú blanco flote sobre el contenido */
+  #menu-wrapper {
+    position: relative;
+    z-index: 1000;
+  }
+
+  .navbar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
